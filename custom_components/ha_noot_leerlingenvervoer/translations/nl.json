@@ -2,7 +2,7 @@
   "config": {
     "step": {
       "user": {
-        "title": "Noot Leerlingenvervoer",
+        "title": "HA Noot Leerlingenvervoer",
         "description": "Meld je aan met het account dat je op portal.noot.nl gebruikt. Laat het klantnummer leeg om het automatisch te laten herkennen.",
         "data": {
           "username": "Gebruikersnaam",
@@ -12,16 +12,12 @@
         }
       },
       "advanced": {
-        "title": "Noot Leerlingenvervoer - instellingen",
-        "description": "Verversingsintervallen en optionele locaties. De thuislocatie komt uit zone.home als je die leeg laat.",
+        "title": "HA Noot Leerlingenvervoer - instellingen",
+        "description": "Verversingsintervallen en de afstand voor de 'bijna thuis' sensor.",
         "data": {
-          "schema_interval": "Verversingsinterval schema",
-          "tracking_interval": "Verversingsinterval live tracking",
-          "near_home_km": "Afstand voor 'bijna thuis'",
-          "home_latitude": "Thuisbreedtegraad (optioneel)",
-          "home_longitude": "Thuislengtegraad (optioneel)",
-          "school_latitude": "Schoolbreedtegraad (optioneel)",
-          "school_longitude": "Schoollengtegraad (optioneel)"
+          "schema_interval": "Verversingsinterval schema (s)",
+          "tracking_interval": "Verversingsinterval live tracking (s)",
+          "near_home_km": "Afstand voor 'bijna thuis' (km)"
         }
       }
     },
@@ -37,16 +33,12 @@
   "options": {
     "step": {
       "init": {
-        "title": "Noot Leerlingenvervoer - instellingen",
-        "description": "Verversingsintervallen en optionele locaties. De thuislocatie komt uit zone.home als je die leeg laat.",
+        "title": "HA Noot Leerlingenvervoer - instellingen",
+        "description": "Pas de verversingsintervallen en de afstand voor de 'bijna thuis' sensor aan.",
         "data": {
-          "schema_interval": "Verversingsinterval schema",
-          "tracking_interval": "Verversingsinterval live tracking",
-          "near_home_km": "Afstand voor 'bijna thuis'",
-          "home_latitude": "Thuisbreedtegraad (optioneel)",
-          "home_longitude": "Thuislengtegraad (optioneel)",
-          "school_latitude": "Schoolbreedtegraad (optioneel)",
-          "school_longitude": "Schoollengtegraad (optioneel)"
+          "schema_interval": "Verversingsinterval schema (s)",
+          "tracking_interval": "Verversingsinterval live tracking (s)",
+          "near_home_km": "Afstand voor 'bijna thuis' (km)"
         }
       }
     }

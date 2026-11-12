@@ -2,7 +2,7 @@
   "config": {
     "step": {
       "user": {
-        "title": "Noot Leerlingenvervoer",
+        "title": "HA Noot Leerlingenvervoer",
         "description": "Sign in with the account you use on portal.noot.nl. Leave the customer number empty to detect it automatically.",
         "data": {
           "username": "Username",
@@ -12,16 +12,12 @@
         }
       },
       "advanced": {
-        "title": "Noot Leerlingenvervoer - settings",
-        "description": "Refresh intervals and optional locations. The home location is taken from zone.home when left empty.",
+        "title": "HA Noot Leerlingenvervoer - settings",
+        "description": "Refresh intervals and the distance for the 'almost home' sensor.",
         "data": {
-          "schema_interval": "Schedule refresh interval",
-          "tracking_interval": "Live tracking refresh interval",
-          "near_home_km": "Distance for 'almost home'",
-          "home_latitude": "Home latitude (optional)",
-          "home_longitude": "Home longitude (optional)",
-          "school_latitude": "School latitude (optional)",
-          "school_longitude": "School longitude (optional)"
+          "schema_interval": "Schedule refresh interval (s)",
+          "tracking_interval": "Live tracking refresh interval (s)",
+          "near_home_km": "Distance for 'almost home' (km)"
         }
       }
     },
@@ -37,16 +33,12 @@
   "options": {
     "step": {
       "init": {
-        "title": "Noot Leerlingenvervoer - settings",
-        "description": "Refresh intervals and optional locations. The home location is taken from zone.home when left empty.",
+        "title": "HA Noot Leerlingenvervoer - settings",
+        "description": "Adjust the refresh intervals and the distance for the 'almost home' sensor.",
         "data": {
-          "schema_interval": "Schedule refresh interval",
-          "tracking_interval": "Live tracking refresh interval",
-          "near_home_km": "Distance for 'almost home'",
-          "home_latitude": "Home latitude (optional)",
-          "home_longitude": "Home longitude (optional)",
-          "school_latitude": "School latitude (optional)",
-          "school_longitude": "School longitude (optional)"
+          "schema_interval": "Schedule refresh interval (s)",
+          "tracking_interval": "Live tracking refresh interval (s)",
+          "near_home_km": "Distance for 'almost home' (km)"
         }
       }
     }
