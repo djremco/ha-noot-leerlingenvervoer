@@ -18,6 +18,11 @@ geen losse scripts, geen template helpers meer nodig.
 > Deze integratie is (deels) gegenereerd met AI, maar de werking is door de
 > maker persoonlijk getest en wordt dagelijks gebruikt in een echte
 > Home Assistant-installatie.
+>
+> **Onderhoud:** Dit project wordt onderhouden zolang mijn dochter met Noot
+> reist — en zolang het portaal voor ons toegankelijk is. Ik heb er zelf
+> dagelijks baat bij, dus ik houd het graag werkend. Mocht dat veranderen,
+> dan wordt de repository gearchiveerd of overgedragen.
 
 ## Waarom deze integratie?
 
