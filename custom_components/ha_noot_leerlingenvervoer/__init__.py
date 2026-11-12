@@ -23,6 +23,8 @@ from .const import (
     DEFAULT_SCHEMA_INTERVAL,
     DEFAULT_TRACKING_INTERVAL,
     DOMAIN,
+    MIN_SCHEMA_INTERVAL,
+    MIN_TRACKING_INTERVAL,
 )
 from .coordinator import NootScheduleCoordinator, NootTrackingCoordinator
 from .api import NootScheduleApi, NootTrackingApi
@@ -46,13 +48,13 @@ class NootTaxiRuntimeData:
     tracking_session: aiohttp.ClientSession
 
 
-def _interval(value: object, default: int) -> int:
-    """Return a usable update interval."""
+def _interval(value: object, default: int, minimum: int = 1) -> int:
+    """Return a usable update interval, clamped to at least minimum."""
     try:
         interval = int(value)  # type: ignore[arg-type]
     except (TypeError, ValueError):
         return default
-    return interval if interval > 0 else default
+    return max(interval, minimum) if interval > 0 else default
 
 
 async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
@@ -84,12 +86,20 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     schedule = NootScheduleCoordinator(
         hass,
         NootScheduleApi(schedule_session, username, password, klantnr, company),
-        _interval(entry.options.get(CONF_SCHEMA_INTERVAL), DEFAULT_SCHEMA_INTERVAL),
+        _interval(
+            entry.options.get(CONF_SCHEMA_INTERVAL),
+            DEFAULT_SCHEMA_INTERVAL,
+            MIN_SCHEMA_INTERVAL,
+        ),
     )
     tracking = NootTrackingCoordinator(
         hass,
         NootTrackingApi(tracking_session, username, password),
-        _interval(entry.options.get(CONF_TRACKING_INTERVAL), DEFAULT_TRACKING_INTERVAL),
+        _interval(
+            entry.options.get(CONF_TRACKING_INTERVAL),
+            DEFAULT_TRACKING_INTERVAL,
+            MIN_TRACKING_INTERVAL,
+        ),
     )
 
     try:
