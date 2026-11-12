@@ -1,6 +1,6 @@
 # HA Noot Leerlingenvervoer
 
-> **Versie 2026-11-12-01** — Zie [CHANGELOG](CHANGELOG.md)
+> **Versie 2026.11.12.01** — Zie [CHANGELOG](CHANGELOG.md)
 
 Een Home Assistant custom integratie die het ritschema en de live tracking van
 [Noot Vervoer](https://portal.noot.nl) uitleest en omzet in sensoren, binaire
