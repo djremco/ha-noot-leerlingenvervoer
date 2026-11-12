@@ -115,7 +115,7 @@ Home Assistant UI worden ze weergegeven met een voorvoegsel voor de area
 | Schoolbreedtegraad / -lengtegraad | leeg | Kaartfallback als het portaal geen GPS geeft |
 
 Het portaal werkt het schema maar een paar keer per uur bij; een korter interval
-geeft niet per se nieuwere data.
+geeft niet per se nieuwere data en kan een rate limit triggeren.
 
 ## Hoe het werkt
 
