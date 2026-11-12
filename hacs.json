@@ -1,0 +1,8 @@
+{
+  "name": "HA Noot Leerlingenvervoer",
+  "render_readme": true,
+  "homeassistant": "2024.6.0",
+  "country": ["NL"],
+  "domains": ["ha_noot_leerlingenvervoer"],
+  "iot_class": "cloud_polling"
+}

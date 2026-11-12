@@ -1,0 +1,54 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Noot Leerlingenvervoer",
+        "description": "Sign in with the account you use on portal.noot.nl. Leave the customer number empty to detect it automatically.",
+        "data": {
+          "username": "Username",
+          "password": "Password",
+          "company": "Portal company code",
+          "klantnr": "Customer number (optional)"
+        }
+      },
+      "advanced": {
+        "title": "Noot Leerlingenvervoer - settings",
+        "description": "Refresh intervals and optional locations. The home location is taken from zone.home when left empty.",
+        "data": {
+          "schema_interval": "Schedule refresh interval",
+          "tracking_interval": "Live tracking refresh interval",
+          "near_home_km": "Distance for 'almost home'",
+          "home_latitude": "Home latitude (optional)",
+          "home_longitude": "Home longitude (optional)",
+          "school_latitude": "School latitude (optional)",
+          "school_longitude": "School longitude (optional)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Could not reach the Noot portal. Check your connection and try again.",
+      "invalid_auth": "The portal rejected these credentials.",
+      "unknown": "Unexpected error. Check the Home Assistant log for details."
+    },
+    "abort": {
+      "already_configured": "This portal account is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Noot Leerlingenvervoer - settings",
+        "description": "Refresh intervals and optional locations. The home location is taken from zone.home when left empty.",
+        "data": {
+          "schema_interval": "Schedule refresh interval",
+          "tracking_interval": "Live tracking refresh interval",
+          "near_home_km": "Distance for 'almost home'",
+          "home_latitude": "Home latitude (optional)",
+          "home_longitude": "Home longitude (optional)",
+          "school_latitude": "School latitude (optional)",
+          "school_longitude": "School longitude (optional)"
+        }
+      }
+    }
+  }
+}

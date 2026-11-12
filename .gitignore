@@ -1,0 +1,24 @@
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+
+# Editor and OS noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Never commit real credentials or a local Home Assistant config
+config/
+secrets.yaml
+*.env
+
+# Home Assistant
+home-assistant_v2.db
+home-assistant.log
+.storage/

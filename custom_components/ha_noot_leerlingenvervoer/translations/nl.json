@@ -1,0 +1,54 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Noot Leerlingenvervoer",
+        "description": "Meld je aan met het account dat je op portal.noot.nl gebruikt. Laat het klantnummer leeg om het automatisch te laten herkennen.",
+        "data": {
+          "username": "Gebruikersnaam",
+          "password": "Wachtwoord",
+          "company": "Portaal-bedrijfscode",
+          "klantnr": "Klantnummer (optioneel)"
+        }
+      },
+      "advanced": {
+        "title": "Noot Leerlingenvervoer - instellingen",
+        "description": "Verversingsintervallen en optionele locaties. De thuislocatie komt uit zone.home als je die leeg laat.",
+        "data": {
+          "schema_interval": "Verversingsinterval schema",
+          "tracking_interval": "Verversingsinterval live tracking",
+          "near_home_km": "Afstand voor 'bijna thuis'",
+          "home_latitude": "Thuisbreedtegraad (optioneel)",
+          "home_longitude": "Thuislengtegraad (optioneel)",
+          "school_latitude": "Schoolbreedtegraad (optioneel)",
+          "school_longitude": "Schoollengtegraad (optioneel)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Kan het Noot-portaal niet bereiken. Controleer je verbinding en probeer het opnieuw.",
+      "invalid_auth": "Het portaal heeft deze inloggegevens geweigerd.",
+      "unknown": "Onverwachte fout. Bekijk het Home Assistant-logboek voor details."
+    },
+    "abort": {
+      "already_configured": "Dit portaalaccount is al geconfigureerd."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Noot Leerlingenvervoer - instellingen",
+        "description": "Verversingsintervallen en optionele locaties. De thuislocatie komt uit zone.home als je die leeg laat.",
+        "data": {
+          "schema_interval": "Verversingsinterval schema",
+          "tracking_interval": "Verversingsinterval live tracking",
+          "near_home_km": "Afstand voor 'bijna thuis'",
+          "home_latitude": "Thuisbreedtegraad (optioneel)",
+          "home_longitude": "Thuislengtegraad (optioneel)",
+          "school_latitude": "Schoolbreedtegraad (optioneel)",
+          "school_longitude": "Schoollengtegraad (optioneel)"
+        }
+      }
+    }
+  }
+}
