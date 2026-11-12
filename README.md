@@ -54,8 +54,8 @@ Home Assistant UI worden ze weergegeven met een voorvoegsel voor de area
 | `volgende_middagrit` | Ophaaltijd volgende middagrit | `14:30` |
 | `eerstvolgende_rit` | De rit die het eerst start (ochtend óf middag) | `14:30` |
 | `ritten_vandaag` | Aantal ritten vandaag | `2` |
-| `chauffeur` | Chauffeur van de eerstvolgende rit | `SIMONA` |
-| `afzettijd` | Verwachtte uitstapmoment | `15:05` |
+| `chauffeur` | Chauffeur van de eerstvolgende rit | `J. de Vries` |
+| `afzettijd` | Verwachtte uitstapmoment | `15:00` |
 | `datum` | Datum van de eerstvolgende rit | `13-11-26` |
 | `dag` | Dag van de week | `VRIJDAG` |
 | `status` | Status van de eerstvolgende rit | `Aanwezig` |
