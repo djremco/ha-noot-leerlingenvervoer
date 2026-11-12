@@ -21,15 +21,16 @@ geen losse scripts, geen template helpers meer nodig.
 
 ## Waarom deze integratie?
 
-Ik heb deze integratie gemaakt omdat ik wilde weten wanneer mijn dochter in de
-(bus)taxi stapt, hoe lang ze erin zit, en waar de bus is. Ook als het schema
+Ik heb deze integratie gemaakt omdat ik wilde weten wanneer mijn kind in de
+(bus)taxi stapt, hoe lang het erin zit, en waar de bus is. Ook als het schema
 onverwacht verandert (bijv. een andere ophaaltijd omdat de schooltijden wijzigen),
 wil ik automatisch een melding krijgen zodat we op tijd klaar staan.
 
 ### Wat kun je ermee doen?
 
-- **"Sophia is ingestapt"** — een automatisering stuurt een Telegram-bericht
-  zodra de middagrit begint, met de chauffeur en verwachte uitstaptijd.
+- **"Ingestapt"** — een automatisering stuurt een melding
+  (Telegram, spraak, etc.) zodra de middagrit begint, met de chauffeur en
+  verwachte uitstaptijd.
 - **"Taxi komt eraan"** — een spraakmelding in huis (`noot_taxi_busje_komt_thuis_spraak`)
   waarschuwt wanneer de bus binnen de ingestelde afstand van huis is.
 - **"Ochtendtaxi over 10 minuten"** — een melding op de wall-tablet als de bus
