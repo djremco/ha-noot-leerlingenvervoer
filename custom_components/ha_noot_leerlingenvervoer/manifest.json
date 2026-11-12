@@ -1,10 +1,12 @@
 {
   "domain": "ha_noot_leerlingenvervoer",
   "name": "Noot Leerlingenvervoer",
-  "codeowners": [],
+  "codeowners": ["@djremco"],
   "config_flow": true,
+  "categories": ["presence_location.trackers"],
   "dependencies": [],
-  "documentation": null,
+  "documentation": "https://github.com/djremco/ha-noot-leerlingenvervoer",
+  "issue_tracker": "https://github.com/djremco/ha-noot-leerlingenvervoer/issues",
   "iot_class": "cloud_polling",
   "requirements": [],
   "version": "2026.11.12.01"
