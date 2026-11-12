@@ -84,11 +84,13 @@ Home Assistant UI worden ze weergegeven met een voorvoegsel voor de area
 
 ## Installatie
 
-### HACS (custom repository)
+### Via Marketplace (aanbevolen)
 
-1. In HACS, open **Integrations** → **Custom repositories**.
-2. Voeg de URL van deze GitHub-repo toe met categorie **Integration**.
-3. Klik op **Install** en herstart Home Assistant.
+Klik op onderstaande knop om de integratie direct aan je Home Assistant toe te voegen:
+
+[![Open je Home Assistant en voeg de repository toe aan de Marketplace.](https://my.home-assistant.io/badges/marketplace_repository.svg)](https://my.home-assistant.io/redirect/marketplace_repository/?owner=djremco&repository=ha-noot-leerlingenvervoer&category=integration)
+
+*Werkt de knop niet? Voeg handmatig `djremco/ha-noot-leerlingenvervoer` toe via **Marketplace → Custom repository** met categorie **Integration**.*
 
 ### Handmatig
 
