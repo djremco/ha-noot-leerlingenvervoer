@@ -50,19 +50,19 @@ Home Assistant UI worden ze weergegeven met een voorvoegsel voor de area
 | Sensor | Wat zie je? | Voorbeeldwaarde |
 | --- | --- | --- |
 | `rit_status_nu` | Status van de rit die vandaag al gestart is | `Aanwezig` |
-| `volgende_ochtendrit` | Ophaaltijd volgende ochtendrit | `07:55` |
+| `volgende_ochtendrit` | Ophaaltijd volgende ochtendrit | `08:88` |
 | `volgende_middagrit` | Ophaaltijd volgende middagrit | `14:30` |
 | `eerstvolgende_rit` | De rit die het eerst start (ochtend óf middag) | `14:30` |
 | `ritten_vandaag` | Aantal ritten vandaag | `2` |
 | `chauffeur` | Chauffeur van de eerstvolgende rit | `J. de Vries` |
 | `afzettijd` | Verwachtte uitstapmoment | `15:00` |
-| `datum` | Datum van de eerstvolgende rit | `13-11-26` |
+| `datum` | Datum van de eerstvolgende rit | `01-01-26` |
 | `dag` | Dag van de week | `VRIJDAG` |
 | `status` | Status van de eerstvolgende rit | `Aanwezig` |
 | `minuten_tot_rit` | Minuten tot de eerstvolgende ophaaltijd | `114` |
 | `live_tracking` | Live status van de actieve tracking | `Gepland` / `Onderweg` |
 | `eta` | ETA zoals het portaal die berekent | `14:30` |
-| `<dag>_<ochtend/middag>` | Per dagdeel: ophaaltijd | `07:55` / `14:30` |
+| `<dag>_<ochtend/middag>` | Per dagdeel: ophaaltijd | `08:00` / `14:30` |
 
 **Attributen** op de ritsensoren: `datum`, `dag`, `ophaaladres`, `school`,
 `chauffeur`, `ritnummer`, `status`, `afzettijd`, `minuten_tot_rit`.
